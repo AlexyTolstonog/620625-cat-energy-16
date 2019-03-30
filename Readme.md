@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [OLEKSII TOLSTONOH](https://up.htmlacademy.ru/adaptive/16/user/620625).
-* Наставник: `Неизвестно`.
+* Наставник: `Никита Рогатнев`(https://htmlacademy.ru/profile/nikita_rogatnev).
 
 ---
 
