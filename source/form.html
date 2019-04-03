@@ -10,7 +10,7 @@
 
   <header class="header">
     <div class="header__container">
-      <a class="header__logo">
+      <a class="header__logo" href="index.html">
         <img src="img/logo-mobile.svg.svg" alt="кот" class="header__logo-image" width="33" height="38"><span
           class="header-logo-text">CAT ENERGY</span>
       </a>
@@ -18,9 +18,9 @@
         <button class="navigation__toggle" type="button">Открыть меню</button>
         <div class="navigation__wrapper">
           <ul class="navigation__list">
-            <li class="list__item list__item-active"><a href="index.html">Главная </a></li>
-            <li class="list__item"><a href="catalog.html">Каталог продукции</a></li>
-            <li class="list__item"><a href="#">Подбор программы</a></li>
+            <li class="navigation__item"><a href="index.html">Главная </a></li>
+            <li class="navigation__item"><a href="catalog.html">Каталог продукции</a></li>
+            <li class="navigation__item"><a href="#">Подбор программы</a></li>
           </ul>
         </div>
       </nav>
@@ -28,7 +28,7 @@
   </header>
 
   <main class="main">
-    <div class="form-block">
+    <div class="form">
       <section class="form__wrapper">
         <h1 class="form__title">Подбор программы</h1>
         <p class="form__title-text">Заполните анкету и мы подберем
@@ -66,10 +66,10 @@
           </div>
 
           <fieldset class="question__field">
-            <h3 class="title-line title-line--width">Контактные данные (владельца кота)</h3>
+            <h3 class="question__title question__title--width">Контактные данные (владельца кота)</h3>
             <div class="question__row">
               <div class="question__column">
-                <label class="form-field form-field--ident">
+                <label class="form-field">
                   <span class="form-field__text">E-mail:*</span>
                   <input class="form-field__control form-field__control--icon" type="email"
                     placeholder="kuklachev@gmail.com" required="">
@@ -114,17 +114,13 @@
           </fieldset>
           <div class="question__row">
             <div class="question__column question__column--bottom">
-              <button class="btn question__btn">Отправить заявку</button>
+              <button class="button question__button">Отправить заявку</button>
             </div>
             <div class="question__column question__column--bottom">
               <p class="question__text"><sup>*</sup>— Обязательные поля</p>
             </div>
           </div>
         </form>
-
-
-
-
       </section>
 
 
@@ -148,7 +144,9 @@
 
   <footer class="footer">
     <div class="footer__container">
-      <a href="#" class="footer__logo"><img src="" alt=""></a>
+      <div class="footer-logo__container">
+        <a class="footer__logo" href="index.html"><img src="" alt=""></a>
+      </div>
       <div class="social">
         <ul class="social__list">
           <li class="social__item"><a href="#" class="social__link social__link--vkontakte">VK</a></li>
