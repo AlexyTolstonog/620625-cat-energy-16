@@ -39,7 +39,7 @@
 
           <div class="form__about">
 
-              <fieldset class="form__parameters">
+              <fieldset class="form__container">
                 <label class="form__label">
                   <span class="form__label-text">Имя:*</span>
                   <input class="form__input" type="text" placeholder="Барсик" required="">
@@ -55,7 +55,7 @@
               </fieldset>
 
 
-              <fieldset class="form__programm">
+              <fieldset class="form__container">
                 <input class="form__input form__input--radio" type="radio"  name="choice" checked="">
                 <label class="form__label" for="radio-1" tabindex="0">Похудение</label>
 
@@ -68,17 +68,17 @@
 
           </div>
 
-          <fieldset class="form__contacts">
-            <h3 class="contacts__title">Контактные данные (владельца кота)</h3>
-            <div class="contacts__wrapper">
-              <div class="contacts__mail-wrapper">
+          <fieldset class="form__container">
+            <h3 class="container__title">Контактные данные (владельца кота)</h3>
+            <div class="container__contact-wrapper">
+              <div class="container__wrapper">
                 <label class="form__label">
                   <span class="form__label-text">E-mail:*</span>
                   <input class="form__input" type="email"
                     placeholder="kuklachev@gmail.com" required="">
                 </label>
               </div>
-              <div class="form__contacts-phone-wrapper">
+              <div class="container__wrapper">
                 <label class="form__label">
                   <span class="form__label-text">Телефон:*</span>
                   <input class="form__input" type="tel"
@@ -88,37 +88,37 @@
             </div>
           </fieldset>
 
-          <div class="form__coments">
+          <div class="form__container">
             <label class="form__label" for="for-textarea">Комментарий</label>
             <textarea class="form__input" rows="8" id="for-textarea"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
 
-          <fieldset class="form__additionally">
+          <fieldset class="form__container">
             <h3 class="form__additionally-title">Дополнительно</h3>
             <div class="form__additionally-wrapper">
 
-              <div class="form__additionally-checkbox">
+              <div class="form__container-checkbox">
                 <input class="form__input form__input--chekbox" type="checkbox" checked="">
                 <label class="form__label" for="check-1" tabindex="0">Сахарозаменитель</label>
               </div>
-              <div class="additionally__checkbox">
+              <div class="form__container-checkbox">
                 <input class="form__input form__input--chekbox" type="checkbox">
                 <label class="form__label" for="check-2" tabindex="0">Питьевая вода</label>
               </div>
-              <div class="additionally__checkbox">
+              <div class="form__container-checkbox">
                 <input class="form__input form__input--chekbox" type="checkbox">
                 <label class="form__label" for="check-3" tabindex="0">Молоко</label>
               </div>
-              <div class="additionally__checkbox">
+              <div class="form__container-checkbox">
                 <input class="form__input form__input--chekbox" type="checkbox">
                 <label class="form__label" for="check-4" tabindex="0">Витамины</label>
               </div>
             </div>
           </fieldset>
 
-          <div class="form__send">
-              <button type="submit" class="button form__send-button">Отправить заявку</button>
+          <div class="form__container">
+              <button type="submit" class="button container__send-button">Отправить заявку</button>
              <p class="form__text-discription"><sup>*</sup>— Обязательные поля</p>
           </div>
         </form>
