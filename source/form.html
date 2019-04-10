@@ -36,89 +36,90 @@
 
 
         <form class="question" action="https://echo.htmlacademy.ru" method="post">
-          <div class="question__row">
-            <div class="question__column">
-              <fieldset class="question__field">
-                <label class="form-field">
-                  <span class="form-field__text">Имя:*</span>
-                  <input class="form-field__control" type="text" placeholder="Барсик" required="">
+          <div class="about-cat">
+
+              <fieldset class="cat-parameters">
+                <label class="cat-parameters__label">
+                  <span class="cat-parameters__text">Имя:*</span>
+                  <input class="cat-parameters__control" type="text" placeholder="Барсик" required="">
                 </label>
-                <label class="form-field">
-                  <span class="form-field__text">Вес (кг):*</span>
-                  <input class="form-field__control" type="text" placeholder="7" required="">
+                <label class="cat-parameters__label">
+                  <span class="cat-parameters__text">Вес (кг):*</span>
+                  <input class="cat-parameters__control" type="text" placeholder="7" required="">
                 </label>
-                <label class="form-field">
-                  <span class="form-field__text">Возраст (лет):</span>
-                  <input class="form-field__control" type="text" placeholder="7">
+                <label class="cat-parameters__label">
+                  <span class="cat-parameters__text">Возраст (лет):</span>
+                  <input class="cat-parameters__control" type="text" placeholder="7">
                 </label>
               </fieldset>
-            </div>
-            <div class="question__column">
-              <fieldset class="question__field question__field--line">
-                <input type="radio" id="radio-1" name="choice" checked="">
-                <label class="form-type form-type--radio" for="radio-1" tabindex="0">Похудение</label>
-                <input type="radio" id="radio-2" name="choice">
-                <label class="form-type form-type--radio" for="radio-2" tabindex="0">Набор массы</label>
-                <input type="radio" id="radio-3" name="choice">
-                <label class="form-type form-type--radio" for="radio-3" tabindex="0">Не знаю (Нужен ваш совет)</label>
+
+
+              <fieldset class="cat-programm">
+                <input class="cat-programm__input--radio" type="radio"  name="choice" checked="">
+                <label class="cat-programm__label--radio" for="radio-1" tabindex="0">Похудение</label>
+
+                <input class="cat-programm__input--radio" type="radio" id="radio-2" name="choice">
+                <label class="cat-programm__label--radio" for="radio-2" tabindex="0">Набор массы</label>
+
+                <input class="cat-programm__input--radio" type="radio" id="radio-3" name="choice">
+                <label class="cat-programm__label--radio" for="radio-3" tabindex="0">Не знаю (Нужен ваш совет)</label>
               </fieldset>
-            </div>
+
           </div>
 
-          <fieldset class="question__field">
-            <h3 class="question__title question__title--width">Контактные данные (владельца кота)</h3>
-            <div class="question__row">
-              <div class="question__column">
-                <label class="form-field">
-                  <span class="form-field__text">E-mail:*</span>
-                  <input class="form-field__control form-field__control--icon" type="email"
+          <fieldset class="contacts">
+            <h3 class="contacts__title">Контактные данные (владельца кота)</h3>
+            <div class="contacts__wrapper">
+              <div class="contacts__mail-wrapper">
+                <label class="contacts__mail">
+                  <span class="mail__text">E-mail:*</span>
+                  <input class="mail__form" type="email"
                     placeholder="kuklachev@gmail.com" required="">
                 </label>
               </div>
-              <div class="question__column">
-                <label class="form-field">
-                  <span class="form-field__text">Телефон:*</span>
-                  <input class="form-field__control form-field__control--icon" type="tel"
+              <div class="contacts__phone-wrapper">
+                <label class="contacts__phone">
+                  <span class="phone__text">Телефон:*</span>
+                  <input class="phone__form" type="tel"
                     placeholder="8 (960) 900-60-90" required="">
                 </label>
               </div>
             </div>
           </fieldset>
 
-          <div class="question__field question__field--ident">
-            <label class="title-line" for="for-textarea">Комментарий</label>
-            <textarea class="question__textarea" rows="8" id="for-textarea"
+          <div class="coments">
+            <label class="coments__title" for="for-textarea">Комментарий</label>
+            <textarea class="coments__textarea" rows="8" id="for-textarea"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
 
-          <fieldset class="question__field question__field--ident-small">
-            <h3 class="title-line title-line--ident">Дополнительно</h3>
-            <div class="question__row">
-              <div class="question__column question__column--check">
-                <input type="checkbox" id="check-1" checked="">
-                <label class="form-type form-type--check" for="check-1" tabindex="0">Сахарозаменитель</label>
+          <fieldset class="additionally">
+            <h3 class="additionally__title">Дополнительно</h3>
+            <div class="additionally__wrapper">
+
+              <div class="additionally__checkbox">
+                <input type="checkbox" checked="">
+                <label class="additionally__checkbox-label" for="check-1" tabindex="0">Сахарозаменитель</label>
               </div>
-              <div class="question__column question__column--check">
-                <input type="checkbox" id="check-2">
-                <label class="form-type form-type--check" for="check-2" tabindex="0">Питьевая вода</label>
+              <div class="additionally__checkbox">
+                <input type="checkbox">
+                <label class="additionally__checkbox-label" for="check-2" tabindex="0">Питьевая вода</label>
               </div>
-              <div class="question__column question__column--check">
-                <input type="checkbox" id="check-3">
-                <label class="form-type form-type--check" for="check-3" tabindex="0">Молоко</label>
+              <div class="additionally__checkbox">
+                <input type="checkbox">
+                <label class="additionally__checkbox-label" for="check-3" tabindex="0">Молоко</label>
               </div>
-              <div class="question__column question__column--check">
-                <input type="checkbox" id="check-4">
-                <label class="form-type form-type--check" for="check-4" tabindex="0">Витамины</label>
+              <div class="additionally__checkbox">
+                <input type="checkbox">
+                <label class="additionally__checkbox-label" for="check-4" tabindex="0">Витамины</label>
               </div>
             </div>
           </fieldset>
-          <div class="question__row">
-            <div class="question__column question__column--bottom">
-              <button type="submit" class="button question__button">Отправить заявку</button>
-            </div>
-            <div class="question__column question__column--bottom">
-              <p class="question__text"><sup>*</sup>— Обязательные поля</p>
-            </div>
+
+          <div class="send-form">
+              <button type="submit" class="button send-form__button">Отправить заявку</button>
+             <p class="send-form__text-discription"><sup>*</sup>— Обязательные поля</p>
+
           </div>
         </form>
       </section>
