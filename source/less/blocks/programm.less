@@ -34,6 +34,7 @@
   color: #ffffff;
   background-color: #68b738;
 }
+
 //планшетная версия
 @media (min-width: 768px) {
   .programm {
@@ -69,5 +70,37 @@
     bottom: 557px;
     position: absolute;
     background-color: #68b738;
+  }
+}
+//десктопная версия
+@media (min-width: 1440px) {
+  .programm {
+    width: 1440px;
+    position: relative;
+    min-height: 690px;
+  }
+
+  .programm__headline {
+    max-width: 45%;
+    margin: 0;
+  }
+
+  .programm__text {
+    max-width: 45%;
+    margin: 0;
+  }
+
+  .programm__image {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    left: 39%;
+  }
+
+  .programm__button {
+    margin: 0;
+    margin-left: 0;
+    position: static;
   }
 }
