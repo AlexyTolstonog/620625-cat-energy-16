@@ -3,6 +3,7 @@
   line-height: 18px;
   color: #444444;
   width: 320px;
+  margin: 0 auto;
 }
 
 .header__container {
@@ -19,4 +20,16 @@
   flex-grow: 1;
   width: 190px;
   height: 65px;
+}
+//планшетная версия
+@media (min-width: 768px) {
+  .header {
+    width: 768px;
+  }
+
+  .header__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

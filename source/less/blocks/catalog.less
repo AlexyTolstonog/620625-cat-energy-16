@@ -1,11 +1,19 @@
 .catalog {
   display: flex;
   flex-direction: column;
+  margin: 0 20px;
 }
 
 .catalog__title {
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
-  margin: 0 auto;
+}
+//планшетная версия
+@media (min-width: 768px) {
+  .catalog__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }

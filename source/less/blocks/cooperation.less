@@ -7,7 +7,8 @@
 .cooperation__block {
   display: flex;
   flex-direction: row;
-  padding: 0 20px;
+  margin: 0 20px;
+  min-height: 114px;
 }
 
 .cooperation__title {
@@ -24,6 +25,17 @@
 }
 
 .cooperation__map {
-  background-image: url("../../img/bg-map-mobile@1x.png");
   min-height: 400px;
+}
+//планшетная версия
+@media (min-width: 768px) {
+  .cooperation__block {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cooperation__text,
+  .cooperation__title {
+    width: 25%;
+  }
 }

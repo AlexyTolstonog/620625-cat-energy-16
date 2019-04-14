@@ -32,7 +32,10 @@
     <section class="programm">
       <h1 class="programm__headline">Функциональное питание для котов</h1>
       <span class="programm__text">Занялся собой? Займись котом</span>
-      <img src="img/index-can-mobile@1x.png" class="programm__image" alt="Кошачья еда" width="280" height="271">
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
+        <img src="img/index-can-mobile@1x.png" class="programm__image" alt="Кошачья еда">
+      </picture>
       <a href="#" class="button programm__button">Подобрать программу</a>
     </section>
     <section class="programm-food">
@@ -92,16 +95,16 @@
 
       <div class="live-example__wrapper">
         <table class="live-example__options">
-          <tbody>
-            <tr>
+          <tbody class="live-example__options-body">
+            <tr class="live-example__options-item">
               <th>5 кг</th>
-              <th>60 дней</th>
+              <th>снижение веса</th>
             </tr>
-            <tr>
-              <td>снижение веса</td>
+            <tr class="live-example__options-item">
+              <td>60 дней</td>
               <td>затрачено времени</td>
             </tr>
-            <tr>
+            <tr class="live-example__options-item">
               <td>Затраты на питание:</td>
               <td>15 000 руб..</td>
             </tr>
@@ -113,8 +116,14 @@
 
       <section class="comparisons">
         <div class="comparisons__images">
+          <picture>
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
           <img src="img/before-mobile@1x.png" alt="пухлый кот" class="comparisons__img comparisons__img--before">
+        </picture>
+        <picture>
+            <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
           <img src="img/after-mobile@1x.png" alt="худой кот" class="comparisons__img comparisons__img--after">
+        </picture>
         </div>
 
         <div class="range">
@@ -126,15 +135,18 @@
         </div>
       </section>
     </section>
-      <section class="cooperation">
-        <div class="cooperation__block">
-          <h3 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h3>
-          <p class="cooperation__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        </div>
-        <div class="cooperation__map">
-
-        </div>
-      </section>
+    <section class="cooperation">
+      <div class="cooperation__block">
+        <h3 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h3>
+        <p class="cooperation__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <div class="cooperation__map">
+        <picture>
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
+              <img src="img/bg-map-mobile@1x.png" alt="карта">
+        </picture>
+      </div>
+    </section>
 
   </main>
 
@@ -146,9 +158,12 @@
       </div>
       <div class="social">
         <ul class="social__list">
-          <li class="social__item"><a href="#" class="social__link social__link--vkontakte"><img src="img/icon-vk-mobile.svg" width="22" height="22"></a></li>
-          <li class="social__item"><a href="#" class="social__link social__link--instagram"><img src="img/icon-insta-mobile.svg" width="22" height="22"></a></li>
-          <li class="social__item"><a href="#" class="social__link social__link--facebook"><img src="img/icon-fb-mobile.svg" width="22" height="22"></a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--vkontakte"><img
+                src="img/icon-vk-mobile.svg" width="22" height="22"></a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--instagram"><img
+                src="img/icon-insta-mobile.svg" width="22" height="22"></a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--facebook"><img
+                src="img/icon-fb-mobile.svg" width="22" height="22"></a></li>
         </ul>
       </div>
       <div class="footer__copyright">

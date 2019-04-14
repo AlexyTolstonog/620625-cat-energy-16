@@ -1,7 +1,12 @@
 .additional {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+  margin: 0 20px;
+}
+
+.additional__item-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .additional__title {
@@ -24,5 +29,22 @@
 
 .additional__button {
   color: #ffffff;
-  background-color: green;
+  background-color: #68b738;
+}
+//планшетная версия
+@media (min-width: 768px) {
+  .additional__title {
+    text-align: left;
+  }
+
+  .additional__item-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .additional__button {
+    min-width: 100%;
+  }
 }
