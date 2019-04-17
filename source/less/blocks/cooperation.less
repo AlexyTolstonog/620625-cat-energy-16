@@ -2,7 +2,11 @@
   display: flex;
   flex-direction: column;
   background-color: white;
+  width: 320px;
+  /*mobile*/
+  margin: 0 auto;
 }
+
 
 .cooperation__block {
   display: flex;
@@ -26,9 +30,17 @@
 
 .cooperation__map {
   min-height: 400px;
+  overflow: hidden;
 }
+
 //планшетная версия
 @media (min-width: 768px) {
+  .cooperation {
+    width: 768px;
+    /*tablet*/
+    margin: 0 auto;
+  }
+
   .cooperation__block {
     justify-content: space-between;
     align-items: center;
@@ -38,4 +50,14 @@
   .cooperation__title {
     width: 25%;
   }
+
+}
+
+@media (min-width: 1300px) {
+  .cooperation {
+    width: 1300px;
+    /*desctop*/
+    margin: 0 auto;
+  }
+
 }

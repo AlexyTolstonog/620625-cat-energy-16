@@ -1,15 +1,18 @@
 .footer {
+  width: 100%;
+  /*mobile*/
   font: 400 14px "Oswald", "Arial", sans-serif;
   line-height: 18px;
   color: #444444;
-  width: 320px;
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
-  margin: 0 auto;
 }
 
 .footer__container {
+  width: 320px;
+  /*mobile row*/
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
@@ -30,10 +33,12 @@
   font-weight: 400;
   line-height: 16px;
 }
+
 //планшетная версия
 @media (min-width: 768px) {
   .footer {
-    width: 768px;
+    width: 100%;
+    /*tablet*/
     min-height: 200px;
     display: flex;
     justify-content: center;
@@ -42,7 +47,9 @@
   .footer__container {
     flex-direction: row;
     align-items: center;
-    margin: 0 20px;
+    width: 768px;
+    /*tablet-row*/
+    margin: 0 auto;
     justify-content: space-between;
   }
 
@@ -52,8 +59,15 @@
 }
 
 //десктопная версия
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .footer {
-    width: auto;
+    width: 100%;
+    /*desctop*/
+  }
+
+  .footer__container {
+    width: 1300px;
+    /*desctop row*/
+    margin: 0 auto;
   }
 }

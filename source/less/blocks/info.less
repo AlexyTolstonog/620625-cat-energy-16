@@ -1,7 +1,8 @@
 .info {
   display: flex;
   flex-direction: column;
-  margin: 0 20px;
+  width: 320px;/*mobile*/
+  margin: 0 auto;
 }
 
 .info__headline {
@@ -36,7 +37,8 @@
 //планшетная версия
 @media (min-width: 768px) {
   .info {
-    margin: 0 30px;
+    width: 768px;/*tablet*/
+    margin: 0 auto;
   }
 
   .info__list {
@@ -61,7 +63,11 @@
 }
 
 //десктопная версия
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
+  .info{
+    width: 1300px;/*desctop*/
+    margin: 0 auto;
+  }
   .info__list-item {
     width: 25%;
   }

@@ -1,10 +1,12 @@
 .programm {
-  width: 100%;
+  width: 320px;/*mobile*/
+  margin: 0 auto;
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   color: white;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .programm__wrapper {
@@ -41,9 +43,10 @@
   .programm {
     background-image: none;
     color: black;
-    width: 709px;
+    width: 768px;/*tablet*/
     margin: 0 auto;
     position: relative;
+    align-items: unset;
   }
 
   .programm__headline {
@@ -75,9 +78,10 @@
   }
 }
 //десктопная версия
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .programm {
-    width: 1440px;
+    width: 1300px;/*desctop*/
+    margin: 0 auto;
     position: relative;
     min-height: 690px;
   }

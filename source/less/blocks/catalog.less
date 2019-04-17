@@ -1,7 +1,8 @@
 .catalog {
   display: flex;
   flex-direction: column;
-  margin: 0 20px;
+ width: 320px;/*mobile*/
+ margin: 0 auto;
 }
 
 .catalog__title {
@@ -11,9 +12,20 @@
 }
 //планшетная версия
 @media (min-width: 768px) {
+  .catalog{
+    width: 768px;/*tablet*/
+    margin: 0 auto;
+  }
   .catalog__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+}
+//десктопная версия
+@media (min-width: 1300px) {
+  .catalog {
+    width: 1300px;/*desctop*/
+    margin: 0 auto;
   }
 }

@@ -1,7 +1,8 @@
 .additional {
   display: flex;
   flex-direction: column;
-  margin: 0 20px;
+  width: 320px;/*mobile*/
+  margin: 0 auto;
 }
 
 .additional__item-wrapper {
@@ -33,6 +34,10 @@
 }
 //планшетная версия
 @media (min-width: 768px) {
+  .additional{
+    width: 768px;/*tablet*/
+    margin: 0 auto;
+  }
   .additional__title {
     text-align: left;
   }
@@ -49,7 +54,11 @@
   }
 }
 //десктопная версия
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
+  .additional{
+    width: 1300px;/*desctop*/
+    margin: 0 auto;
+  }
   .additional__title {
     flex-grow: 1;
   }

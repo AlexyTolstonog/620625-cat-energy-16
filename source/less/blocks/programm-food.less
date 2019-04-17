@@ -2,7 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin: 0 20px;
+  width: 320px;/*mobile*/
+  margin: 0 auto;
 }
 
 .programm-food__wrapper {
@@ -26,8 +27,8 @@
 //планшетная версия
 @media (min-width: 768px) {
   .programm-food {
-    width: 100%;
-    margin: 0 30px;
+    width: 768px;/*tablet*/
+    margin: 0 auto;
   }
 
   .programm-food__wrapper {
@@ -35,10 +36,10 @@
   }
 }
 //десктопная версия
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .programm-food {
-    margin: 0 20px;
-    width: 100%;
+    width: 1300px;
+    margin: 0 auto;/*desctop*/
     justify-content: space-around;
   }
 

@@ -13,7 +13,11 @@
   <header class="header">
     <div class="header__container">
       <a class="header__logo" href="index.html">
-        <img src="img/logo-mobile.svg" alt="кот" class="header__logo-image">
+          <picture>
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+               <img src="img/logo-mobile.svg" alt="кот" class="header__logo-image">
+          </picture>
       </a>
       <nav class="navigation">
         <div class="navigation__wrapper">
@@ -34,6 +38,7 @@
         <article class="item">
           <div class="item__information">
             <picture>
+                <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png">
               <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png">
               <img src="img/chicken-small-mobile@1x.jpg" alt="" class="item__image">
             </picture>
@@ -64,6 +69,7 @@
         <article class="item">
           <div class="item__information">
             <picture>
+                <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png">
               <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png">
               <img src="img/chicken-small-mobile@1x.jpg" alt="" class="item__image">
             </picture>
@@ -93,6 +99,7 @@
         <article class="item">
           <div class="item__information">
             <picture>
+                <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png">
               <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png">
               <img src="img/fish-small-mobile@1x.jpg" alt="" class="item__image">
             </picture>
@@ -122,6 +129,7 @@
         <article class="item">
           <div class="item__information">
             <picture>
+                <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png">
               <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png">
               <img src="img/fish-small-mobile@1x.jpg" alt="" class="item__image">
             </picture>
@@ -151,6 +159,7 @@
         <article class="item">
           <div class="item__information">
             <picture>
+                <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png">
               <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png">
               <img src="img/buckwheat-small-mobile@1x.jpg" alt="" class="item__image">
             </picture>
@@ -180,6 +189,7 @@
         <article class="item">
           <div class="item__information">
             <picture>
+                <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png">
               <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png">
               <img src="img/buckwheat-big-mobile@1x.jpg" alt="" class="item__image">
             </picture>
@@ -209,6 +219,7 @@
         <article class="item">
           <div class="item__information">
             <picture>
+                <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png">
               <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png">
               <img src="img/rice-small-mobile@1x.jpg" alt="" class="item__image">
             </picture>
@@ -325,9 +336,9 @@
         </div>
         <div class="cooperation__map">
           <picture>
-              <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png">
+              <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png">
               <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
-                <img src="img/bg-map-mobile@1x.png" alt="карта">
+                <img src="img/bg-map-mobile@1x.png" class="cooperation__map-image" alt="карта">
           </picture>
         </div>
       </section>

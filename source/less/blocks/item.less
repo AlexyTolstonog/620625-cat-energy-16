@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .item__information {
@@ -31,7 +32,7 @@
 //паншетная версия
 @media (min-width: 768px) {
   .item {
-    min-width: 324px;
+    width: 324px;
     margin-top: 92px;
     align-items: center;
     justify-content: flex-end;
@@ -63,5 +64,15 @@
     background-color: #68b738;
     margin: 0;
     margin-bottom: 40px;
+  }
+}
+//десктопная версия
+@media (min-width: 1300px) {
+  .item {
+    width: 243px;
+  }
+
+  .item__button {
+    width: 169px;
   }
 }

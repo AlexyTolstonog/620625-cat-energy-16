@@ -13,7 +13,11 @@
   <header class="header">
     <div class="header__container">
       <a class="header__logo" href="index.html">
-        <img src="img/logo-mobile.svg" alt="кот" class="header__logo-image">
+          <picture>
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+               <img src="img/logo-mobile.svg" alt="кот" class="header__logo-image">
+          </picture>
       </a>
       <nav class="navigation">
 
@@ -144,7 +148,7 @@
           </div>
           <div class="cooperation__map">
             <picture>
-                <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png">
+                <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png">
                 <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
                   <img src="img/bg-map-mobile@1x.png" alt="карта">
             </picture>
