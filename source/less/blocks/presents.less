@@ -22,6 +22,7 @@
   line-height: 20px;
   margin: 0 auto;
 }
+
 //планшетная версия
 @media (min-width: 768px) {
   .presents {
@@ -42,5 +43,24 @@
     font-size: 16px;
     line-height: 20px;
     margin: 0;
+  }
+}
+
+//десктопная версия
+@media (min-width: 1440px) {
+  .presents {
+    background-image: url("../../img/gift-photo-desktop@1x.jpg");
+    margin-top: 0;
+    width: 20%;
+    height: 100%;
+    min-height: 285px;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .presents__text {
+    width: 66%;
   }
 }

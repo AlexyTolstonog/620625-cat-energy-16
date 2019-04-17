@@ -57,14 +57,13 @@
   color: #ffffff;
   background-color: #68b738;
 }
-
 //планшетная версия
 @media (min-width: 768px) {
   .form__title {
     text-align: left;
   }
 
-  .container__title {
+  .form_title {
     font-size: 24px;
     line-height: 24px;
   }
@@ -90,7 +89,7 @@
     margin-top: 50px;
   }
 
-  .container__checkbox-wrapper {
+  .form__checkbox-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -106,5 +105,38 @@
 
   .form__container-send {
     flex-direction: row;
+  }
+}
+//десктопная версия
+@media (min-width: 1440px) {
+  .form__about {
+    flex-direction: row;
+  }
+
+  .form__container--about {
+    flex-grow: 1;
+  }
+
+  .form__contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form__label {
+    flex-grow: 1;
+  }
+
+  .form__container-checkbox {
+    flex-grow: 1;
+    width: 25%;
+  }
+
+  .form__label--checkbox {
+    justify-content: center;
+  }
+
+  .form__send-button {
+    width: 50%;
   }
 }

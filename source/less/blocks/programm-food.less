@@ -1,6 +1,7 @@
 .programm-food {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
   margin: 0 20px;
 }
 
@@ -25,11 +26,23 @@
 //планшетная версия
 @media (min-width: 768px) {
   .programm-food {
-    width: 709px;
+    width: 100%;
     margin: 0 30px;
   }
 
   .programm-food__wrapper {
     width: auto;
+  }
+}
+//десктопная версия
+@media (min-width: 1440px) {
+  .programm-food {
+    margin: 0 20px;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .programm-food__wrapper {
+    width: 48%;
   }
 }

@@ -29,8 +29,8 @@
   </header>
 
   <main class="main">
-    <div class="form">
-      <section class="form__wrapper">
+    <section class="form">
+      <div class="form__wrapper">
         <h1 class="form__title">Подбор программы</h1>
         <p class="form__title-text">Заполните анкету и мы подберем
           программу питания для вашего кота</p>
@@ -40,7 +40,7 @@
 
           <div class="form__about">
 
-            <fieldset class="form__container">
+            <fieldset class="form__container form__container--about">
               <label class="form__label">
                 <span class="form__label-text">Имя:*</span>
                 <input class="form__input" type="text" placeholder="Барсик" required="">
@@ -56,7 +56,7 @@
             </fieldset>
 
 
-            <fieldset class="form__container">
+            <fieldset class="form__container form__container--about">
 
               <label class="form__label" for="radio-1" tabindex="0"><input class="form__input form__input--radio"
                   type="radio" name="choice" checked="">Похудение</label>
@@ -73,50 +73,50 @@
           </div>
 
           <fieldset class="form__container">
-            <h3 class="container__title">Контактные данные (владельца кота)</h3>
-            <div class="container__contact-wrapper">
-              <div class="container__wrapper">
+            <h3 class="form_title form_title--contackt">Контактные данные (владельца кота)</h3>
+            <div class="form__contact-wrapper">
+
                 <label class="form__label">
                   <span class="form__label-text">E-mail:*</span>
                   <input class="form__input" type="email" placeholder="kuklachev@gmail.com" required="">
                 </label>
-              </div>
-              <div class="container__wrapper">
+
+
                 <label class="form__label">
                   <span class="form__label-text">Телефон:*</span>
                   <input class="form__input" type="tel" placeholder="8 (960) 900-60-90" required="">
                 </label>
-              </div>
+
             </div>
           </fieldset>
 
           <div class="form__container">
-            <h3 class="container__title">Коментарий</h3>
+            <h3 class="form__title form__title--coments">Коментарий</h3>
             <textarea class="form__input" rows="8" id="for-textarea"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
 
           <fieldset class="form__container">
-            <h3 class="container__title">Дополнительно</h3>
-            <div class="container__checkbox-wrapper">
+            <h3 class="form__title form_title--additionaly">Дополнительно</h3>
+            <div class="form__checkbox-wrapper">
 
               <div class="form__container-checkbox">
-                <label class="form__label" for="check-1" tabindex="0"> <input id="check-1" class="form__input form__input--chekbox"
+                <label class="form__label form__label--checkbox" for="check-1" tabindex="0"> <input id="check-1" class="form__input form__input--chekbox"
                     type="checkbox" checked="">Сахарозаменитель</label>
               </div>
 
               <div class="form__container-checkbox">
-                <label class="form__label" for="check-2" tabindex="0"><input id="check-2" class="form__input form__input--chekbox"
+                <label class="form__label form__label--checkbox" for="check-2" tabindex="0"><input id="check-2" class="form__input form__input--chekbox"
                     type="checkbox">Питьевая вода</label>
               </div>
 
               <div class="form__container-checkbox">
-                <label class="form__label" for="check-3" tabindex="0"><input id="check-3" class="form__input form__input--chekbox"
+                <label class="form__label form__label--checkbox" for="check-3" tabindex="0"><input id="check-3" class="form__input form__input--chekbox"
                     type="checkbox">Молоко</label>
 
                   </div>
               <div class="form__container-checkbox">
-                <label class="form__label" for="check-4" tabindex="0"><input id="check-4" class="form__input form__input--chekbox"
+                <label class="form__label form__label--checkbox" for="check-4" tabindex="0"><input id="check-4" class="form__input form__input--chekbox"
                   type="checkbox">Витамины</label>
               </div>
 
@@ -130,9 +130,9 @@
           </div>
           </div>
         </form>
-      </section>
+      </div>
 
-
+    </section>
 
 
 
@@ -144,6 +144,7 @@
           </div>
           <div class="cooperation__map">
             <picture>
+                <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png">
                 <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
                   <img src="img/bg-map-mobile@1x.png" alt="карта">
             </picture>
