@@ -1,7 +1,8 @@
 .additional {
   display: flex;
   flex-direction: column;
-  width: 320px;/*mobile*/
+  width: 280px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -34,10 +35,12 @@
 }
 //планшетная версия
 @media (min-width: 768px) {
-  .additional{
-    width: 768px;/*tablet*/
+  .additional {
+    width: 708px;
+    padding: 0 30px;
     margin: 0 auto;
   }
+
   .additional__title {
     text-align: left;
   }
@@ -55,10 +58,12 @@
 }
 //десктопная версия
 @media (min-width: 1300px) {
-  .additional{
-    width: 1300px;/*desctop*/
+  .additional {
+    width: 1220px;
+    padding: 0 40px;
     margin: 0 auto;
   }
+
   .additional__title {
     flex-grow: 1;
   }

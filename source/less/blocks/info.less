@@ -1,7 +1,9 @@
 .info {
   display: flex;
   flex-direction: column;
-  width: 320px;/*mobile*/
+  width: 280px;
+  /*ширина для мобильного*/
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -34,11 +36,13 @@
   font-weight: 400;
   line-height: 18px;
 }
+
 //планшетная версия
 @media (min-width: 768px) {
   .info {
-    width: 768px;/*tablet*/
+    width: 708px;
     margin: 0 auto;
+    padding: 0 30px;
   }
 
   .info__list {
@@ -64,10 +68,13 @@
 
 //десктопная версия
 @media (min-width: 1300px) {
-  .info{
-    width: 1300px;/*desctop*/
+  .info {
+    width: 1220px;
+    /*desctop*/
     margin: 0 auto;
+    padding: 0 40px;
   }
+
   .info__list-item {
     width: 25%;
   }

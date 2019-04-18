@@ -3,7 +3,6 @@
   flex-direction: column;
   background-color: white;
   width: 320px;
-  /*mobile*/
   margin: 0 auto;
 }
 
@@ -11,7 +10,7 @@
 .cooperation__block {
   display: flex;
   flex-direction: row;
-  margin: 0 20px;
+  /*margin: 0 20px;*/
   min-height: 114px;
 }
 
@@ -32,7 +31,6 @@
   min-height: 400px;
   overflow: hidden;
 }
-
 //планшетная версия
 @media (min-width: 768px) {
   .cooperation {
@@ -44,20 +42,24 @@
   .cooperation__block {
     justify-content: space-between;
     align-items: center;
+    padding: 0 30px;
   }
 
   .cooperation__text,
   .cooperation__title {
     width: 25%;
   }
-
 }
 
 @media (min-width: 1300px) {
   .cooperation {
-    width: 1300px;
+    width: 1220px;
+    padding: 0 40px;
     /*desctop*/
     margin: 0 auto;
   }
 
+  .cooperation__block {
+    display: none;
+  }
 }

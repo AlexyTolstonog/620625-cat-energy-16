@@ -2,7 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  width: 320px;/*mobile*/
+  width: 280px;/*ширина для мобильного*/
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -27,8 +28,9 @@
 //планшетная версия
 @media (min-width: 768px) {
   .programm-food {
-    width: 768px;/*tablet*/
+    width: 708px;
     margin: 0 auto;
+    padding: 0 30px;
   }
 
   .programm-food__wrapper {
@@ -38,8 +40,9 @@
 //десктопная версия
 @media (min-width: 1300px) {
   .programm-food {
-    width: 1300px;
+    width: 1220px;
     margin: 0 auto;/*desctop*/
+    padding: 0 40px;/*внутрение отступы*/
     justify-content: space-around;
   }
 

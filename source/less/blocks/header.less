@@ -2,19 +2,16 @@
   font: 400 14px "Oswald", "Arial", sans-serif;
   line-height: 18px;
   color: #444444;
-  width: 100%
+  width: 100%;
 }
 
 .header__container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 320px;/*ширина для мобильного*/
+  width: 280px;
+  padding: 0 20px;
   margin: 0 auto;
-}
-
-.header__logo {
-  margin-left: 10px;
 }
 
 .header__logo-image {
@@ -22,7 +19,6 @@
   width: 190px;
   height: 65px;
 }
-
 //планшетная версия
 @media (min-width: 768px) {
   .header {
@@ -33,20 +29,26 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 768px;/*ширина для планшета*/
+    width: 708px;
+    padding: 0 30px;
     margin: 0 auto;
   }
 }
 //десктопная версия
 @media (min-width: 1300px) {
   .header {
-    width: 100%
+    width: 100%;
   }
+
   //ширина для десктопа
   .header__container {
-    width: 1300px;/*ширина для десктопа*/
+    width: 1220px;
+    /*ширина контента для десктопа*/
+    padding: 0 40px;
+    /*внутрение отступы*/
     margin: 0 auto;
   }
+
   .header__container--image {
     position: relative;
   }
