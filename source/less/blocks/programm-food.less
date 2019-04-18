@@ -1,7 +1,10 @@
 .programm-food {
   display: flex;
-  flex-direction: column;
-  padding: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 280px;/*ширина для мобильного*/
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .programm-food__wrapper {
@@ -21,4 +24,29 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+}
+//планшетная версия
+@media (min-width: 768px) {
+  .programm-food {
+    width: 708px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  .programm-food__wrapper {
+    width: auto;
+  }
+}
+//десктопная версия
+@media (min-width: 1300px) {
+  .programm-food {
+    width: 1220px;
+    margin: 0 auto;/*desctop*/
+    padding: 0 40px;/*внутрение отступы*/
+    justify-content: space-around;
+  }
+
+  .programm-food__wrapper {
+    width: 48%;
+  }
 }

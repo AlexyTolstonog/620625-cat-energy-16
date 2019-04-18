@@ -1,6 +1,7 @@
 .item {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .item__information {
@@ -23,6 +24,57 @@
 }
 
 .item__button {
+  width: 245px;
   color: #ffffff;
   background-color: green;
+}
+
+//паншетная версия
+@media (min-width: 768px) {
+  .item {
+    width: 324px;
+    margin-top: 92px;
+    align-items: center;
+    justify-content: flex-end;
+    background: linear-gradient(to bottom, white 0%, white 19%, #f2f2f2 19%, #f2f2f2 100%);
+  }
+
+  .item__information {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item__description {
+    width: 100%;
+    margin-bottom: 43px;
+  }
+
+  .item__link-title {
+    text-align: center;
+  }
+
+  .item__options {
+    width: 100%;
+    text-align: center;
+  }
+
+  .item__button {
+    width: 280px;
+    color: #ffffff;
+    background-color: #68b738;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+}
+
+//десктопная версия
+@media (min-width: 1300px) {
+  .item {
+    width: 243px;
+    margin: 0 40px;
+  }
+
+  .item__button {
+    width: 169px;
+  }
 }

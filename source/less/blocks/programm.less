@@ -1,10 +1,17 @@
 .programm {
-  width: 100%;
+  width: 280px;/*ширина для мобильного*/
+  padding: 0 20px;
+  margin: 0 auto;
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   color: white;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.programm__wrapper {
+  display: flex;
 }
 
 .programm__headline {
@@ -22,9 +29,88 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  width: 280px;
+  height: 271px;
 }
 
 .programm__button {
+  width: 245px;
   color: #ffffff;
-  background-color: green;
+  background-color: #68b738;
+}
+
+//планшетная версия
+@media (min-width: 768px) {
+  .programm {
+    background-image: none;
+    color: black;
+    width: 708px;
+    margin: 0 auto;
+    padding: 0 30px;
+    position: relative;
+    align-items: unset;
+  }
+
+  .programm__headline {
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 203px 0 66px;
+  }
+
+  .programm__text {
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 33px auto 48px 66px;
+  }
+
+  .programm__image {
+    width: 709px;
+    height: 609px;
+  }
+
+  .programm__button {
+    width: 245px;
+    margin: 0;
+    margin-left: 66px;
+    bottom: 557px;
+    position: absolute;
+    background-color: #68b738;
+  }
+}
+//десктопная версия
+@media (min-width: 1300px) {
+  .programm {
+    width: 1220px;/*desctop*/
+    padding: 0 40px;/*внутрение отступы*/
+    margin: 0 auto;
+    position: relative;
+    min-height: 690px;
+  }
+
+  .programm__headline {
+    max-width: 45%;
+    margin: 0;
+  }
+
+  .programm__text {
+    max-width: 45%;
+    margin: 0;
+  }
+
+  .programm__image {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    left: 39%;
+  }
+
+  .programm__button {
+    margin: 0;
+    margin-left: 0;
+    position: static;
+    width: 280px;
+  }
 }
