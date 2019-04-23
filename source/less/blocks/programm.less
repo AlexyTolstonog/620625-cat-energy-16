@@ -8,6 +8,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-size: contain;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .programm__wrapper {
