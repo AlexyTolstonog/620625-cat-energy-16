@@ -47,23 +47,38 @@
     <section class="programm-food">
       <div class="programm-food__wrapper">
         <div class="programm-food__title">
-          <img src="img/icon-cat-slim.svg" alt="кошка сидит" class="programm-food__img" width="35" height="49">
+          <svg class="programm-food__img"  width="60" height="50">
+              <use xlink:href="img/sprite.svg#cat-slim"></use>
+            </svg>
+
           <h3 class="programm-food__headline">Похудение</h3>
         </div>
         <p class="programm-food__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
           Пора на
           диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-        <a href="#" class="programm-food__link">Каталог slim</a>
+        <a href="#" class="programm-food__link">
+          <span>Каталог slim</span>
+          <svg class="programm-food__link-icon" width="32" height="32">
+            <use xlink:href="img/sprite.svg#arrow-short"></use>
+          </svg>
+
+        </a>
       </div>
 
       <div class="programm-food__wrapper">
         <div class="programm-food__title">
-          <img src="img/icon-cat-pro.svg" alt="кошка идёт" class="programm-food__img" width="67" height="28">
+            <svg class="programm-food__img" width="67" height="50">
+                <use xlink:href="img/sprite.svg#cat-pro"></use>
+              </svg>
           <h3 class="programm-food__headline">Набор массы</h3>
         </div>
         <p class="programm-food__text">Заработать авторитет среди дворовых котов и даже собак?
           Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-        <a href="#" class="programm-food__link">Каталог pro</a>
+        <a href="#" class="programm-food__link">
+          <span>Каталог slim</span>
+          <svg class="programm-food__link-icon" width="32" height="32">
+            <use xlink:href="img/sprite.svg#arrow-short"></use>
+          </svg></a>
       </div>
     </section>
 
@@ -179,7 +194,7 @@
       <div class="social">
         <ul class="social__list">
           <li class="social__item"><a href="#" class="social__link social__link--vkontakte">
-            <svg class="link-icon"width="32" height="32">
+            <svg class="link-icon" width="32" height="32">
               <use xlink:href="img/sprite.svg#social__icon--vkontakte"></use>
             </svg>
 
@@ -190,22 +205,25 @@
               </svg>
           </a></li>
           <li class="social__item"><a href="#" class="social__link social__link--facebook">
-            <svg  focuselable="false"class=" link-icon" width="32" height="32">
+            <svg  focusable="false" class="link-icon" width="32" height="32">
               <use xlink:href="img/sprite.svg#social__icon--facebook"></use>
           </svg>
         </a></li>
         </ul>
       </div>
       <div class="footer__copyright">
-        <p class="footer__copyright-text">HTML Academy</p>
-
+        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="footer__copyright-text">HTML Academy</span>
         <svg class="footer__copyright-image" width="32" height="32">
-            <use xlink:href="img\sprite.svg#html-icon"></use>
+            <use xlink:href="img/sprite.svg#html-icon"></use>
         </svg>
+      </a>
       </div>
 
     </div>
   </footer>
+
+
   <script>
       var navMain = document.querySelector('.navigation');
       var navToggle = document.querySelector('.navigation__toggle');
