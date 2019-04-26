@@ -10,11 +10,32 @@
 }
 
 .footer__container {
-  width: 280px;/*ширина для мобильного*/
+  width: 280px;
+  /*ширина для мобильного*/
   padding: 0 20px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+}
+
+.social-link {
+  position: relative;
+
+  &:hover .link-icon {
+    fill: #68b738;
+  }
+}
+
+
+.link-icon {
+  position: absolute;
+  width: auto;
+  height: auto;
+
+
+  &:hover {
+    fill: #68b738;
+  }
 }
 
 .footer__logo {
