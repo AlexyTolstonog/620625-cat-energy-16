@@ -246,6 +246,9 @@
 
 
         <div class="product-more">
+            <svg  focusable="false" class="product-more__image" width="30" height="30">
+                <use xlink:href="img/sprite.svg#plus"></use>
+            </svg>
           <h3 class="product-more__title">Показать еще 100500 товаров</h3>
           <p class="product-more__text">На самом деле вкусов гораздо больше!</p>
           <a href="#" class="button product-more__button">показать всё</a>
@@ -320,7 +323,9 @@
         </div>
       </div>
         <div class="presents">
-          <img class="presents__image" src="img/icon-gift.svg" alt="подарок">
+          <svg class="presents__image" width="32" height="32">
+                  <use xlink:href="img/sprite.svg#present"></use>
+                </svg>
           <p class="presents__text">Закажите все
             и получите чехол для кота в подарок!</p>
         </div>
@@ -328,7 +333,7 @@
     </section>
 
     <section class="cooperation">
-        <div class="cooperation__block">
+      <div class="cooperation__block">
           <h3 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h3>
           <p class="cooperation__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
@@ -343,27 +348,41 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__container">
-      <div class="footer__logo">
-        <a class="footer__logo-link" href="#"><img src="img/logo-footer.svg" alt="Kat Energy"></a>
-      </div>
-      <div class="social">
-        <ul class="social__list">
-          <li class="social__item"><a href="#" class="social__link social__link--vkontakte"><img
-                src="img/icon-vk-mobile.svg" width="22" height="22"></a></li>
-          <li class="social__item"><a href="#" class="social__link social__link--instagram"><img
-                src="img/icon-insta-mobile.svg" width="22" height="22"></a></li>
-          <li class="social__item"><a href="#" class="social__link social__link--facebook"><img
-                src="img/icon-fb-mobile.svg" width="22" height="22"></a></li>
-        </ul>
-      </div>
-      <div class="footer__copyright">
-        <p class="footer__copyright-text">HTML Academy</p>
-        <img src="img/htmlacademy.svg.svg" alt="HTMLACADEMY" class="footer__copyright-image">
-      </div>
+      <div class="footer__container">
+        <div class="footer__logo">
+          <a class="footer__logo-link" href="#"><img src="img/logo-footer.svg" alt="Kat Energy"></a>
+        </div>
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item"><a href="#" class="social__link social__link--vkontakte">
+              <svg class="link-icon" width="32" height="32">
+                <use xlink:href="img/sprite.svg#social__icon--vkontakte"></use>
+              </svg>
 
-    </div>
-  </footer>
+            </a></li>
+            <li class="social__item"><a href="#" class="social__link social__link--instagram">
+                <svg class="link-icon" width="32" height="32">
+                  <use xlink:href="img/sprite.svg#social__icon--instagram"></use>
+                </svg>
+            </a></li>
+            <li class="social__item"><a href="#" class="social__link social__link--facebook">
+              <svg  focusable="false" class="link-icon" width="32" height="32">
+                <use xlink:href="img/sprite.svg#social__icon--facebook"></use>
+            </svg>
+          </a></li>
+          </ul>
+        </div>
+        <div class="footer__copyright">
+          <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="footer__copyright-text">HTML Academy</span>
+          <svg class="footer__copyright-image" width="32" height="32">
+              <use xlink:href="img/sprite.svg#html-icon"></use>
+          </svg>
+        </a>
+        </div>
+
+      </div>
+    </footer>
   <script>
       var navMain = document.querySelector('.navigation');
       var navToggle = document.querySelector('.navigation__toggle');

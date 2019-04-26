@@ -39,10 +39,41 @@
   display: flex;
   flex-direction: row;
   justify-content: start;
+  position: relative;
 }
 
 .form__input {
   flex-grow: 1;
+  padding: 5px 45px 5px 20px;
+  border: 2px solid rgba(205, 205, 205, 0.5);
+
+  &:hover {
+    border: 2px solid rgba(205, 205, 205, 1);
+  }
+
+  &:active {
+    border: 2px solid #444444;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
+
+  &:active ~ svg {
+    fill: #68b738;
+  }
+
+  &:invalid ~ svg {
+    fill: #ff8282;
+  }
+}
+
+
+.form__input-icon {
+  position: absolute;
+  right: 20px;
+  width: 17px;
+  height: 17px;
 }
 
 .form__input--radio {
@@ -62,6 +93,7 @@
   color: #ffffff;
   background-color: #68b738;
 }
+
 //планшетная версия
 @media (min-width: 768px) {
   .form {
@@ -118,6 +150,7 @@
     flex-direction: row;
   }
 }
+
 //десктопная версия
 @media (min-width: 1300px) {
   .form {
