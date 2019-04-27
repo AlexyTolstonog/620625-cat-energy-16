@@ -51,8 +51,12 @@
   text-transform: uppercase;
 }
 
-.form__input {
+.form__input--info,
+.form__input--contackt {
   height: 31px;
+}
+
+.form__input {
   flex-grow: 1;
   padding: 5px 45px 5px 20px;
   border: 2px solid rgba(205, 205, 205, 0.5);
@@ -95,7 +99,7 @@
 .form__label--radio {
   position: relative;
   padding-left: 51px;
-  margin: 27px 0;
+  margin: 55px 0;
 }
 
 .form__label--radio::before {
@@ -113,13 +117,13 @@
   position: absolute;
   top: 50%;
   left: 11px;
+  background: #68b738;
+  margin-top: 0;
+  transform: translate(10px, -9px);
   width: 18px;
   height: 18px;
   border-radius: 50%;
   border: none;
-  background: #68b738;
-  margin-top: 0;
-  transform: translate(10px, -9px);
   display: none;
 }
 
@@ -127,9 +131,43 @@
   display: block;
 }
 
+/*CHEKBOX*/
 
-.form__input--chekbox {
+.form__input--checkbox {
   flex-grow: 0;
+  display: none;
+}
+
+.form__label--checkbox {
+  position: relative;
+  padding-left: 50px;
+  margin-top: 50px;
+}
+
+.form__label--checkbox::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+}
+
+.form__label--checkbox::after {
+  content: "";
+  left: 10px;
+  display: none;
+  background: url("../img/checkbpxarrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
+.form__input--checkbox:checked + .form__label--checkbox::after {
+  display: block;
 }
 
 .form__container-send {
@@ -228,10 +266,6 @@
   .form__container-checkbox {
     flex-grow: 1;
     width: 25%;
-  }
-
-  .form__label--checkbox {
-    justify-content: center;
   }
 
   .form__send-button {
