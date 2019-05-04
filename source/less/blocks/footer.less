@@ -41,6 +41,15 @@
   display: flex;
   justify-content: space-around;
   padding-top: 20px;
+
+  &:hover .footer__copyright-image {
+    fill: green;
+  }
+
+  &:active {
+    opacity: 0.3;
+    fill: green;
+  }
 }
 
 .footer__copyright-link {
@@ -62,10 +71,6 @@
   fill: black;
   width: 39px;
   height: 40px;
-
-  &:hover {
-    fill: green;
-  }
 }
 
 //планшетная версия
