@@ -45,22 +45,22 @@
           <div class="form__about">
 
             <fieldset class="form__container form__container--about">
-              <label class="form__label">
+              <label class="form__label form__label--info">
                 <span class="form__label-text">Имя:*</span>
                 <input class="form__input form__input--info" type="text" placeholder="Барсик">
               </label>
-              <label class="form__label">
+              <label class="form__label form__label--info">
                 <span class="form__label-text">Вес (кг):*</span>
                 <input class="form__input form__input--info" type="text" placeholder="7">
               </label>
-              <label class="form__label">
+              <label class="form__label form__label--info">
                 <span class="form__label-text">Возраст (лет):</span>
                 <input class="form__input form__input--info" type="text" placeholder="7">
               </label>
             </fieldset>
 
 
-            <fieldset class="form__container form__container--about">
+            <fieldset class="form__container form__container--radio">
 
                 <input class="form__input form__input--radio" type="radio" id="radio-1" name="choice" checked="" >
               <label class="form__label form__label--radio" for="radio-1" tabindex="0">Похудение</label>
@@ -76,11 +76,10 @@
 
           </div>
 
-          <fieldset class="form__container">
-            <h3 class="form_title form_title--contackt">Контактные данные (владельца кота)</h3>
+          <fieldset class="form__container form__container--contackt">
+            <h3 class="form__title form__title--contackt">Контактные данные (владельца кота)</h3>
             <div class="form__contact-wrapper">
-
-                <label class="form__label">
+                <label class="form__label form__label--contackt">
                   <span class="form__label-text">E-mail:*</span>
                   <input class="form__input form__input--contackt" type="email" placeholder="kuklachev@gmail.com">
                   <svg class="form__input-icon" width="32" height="32">
@@ -89,7 +88,7 @@
                 </label>
 
 
-                <label class="form__label">
+                <label class="form__label form__label--contackt">
                   <span class="form__label-text">Телефон:*</span>
                   <input class="form__input form__input--contackt" type="tel" placeholder="8 (960) 900-60-90">
                   <svg class="form__input-icon" width="32" height="32">
@@ -100,14 +99,14 @@
             </div>
           </fieldset>
 
-          <div class="form__container">
+          <div class="form__container form__container--coments">
             <h3 class="form__title form__title--coments">Коментарий</h3>
             <textarea class="form__input form__input--coments" rows="8" id="for-textarea"
-              placeholder="Расскажите обо всех повадках кота"></textarea>
+              placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
           </div>
 
-          <fieldset class="form__container">
-            <h3 class="form__title form_title--additionaly">Дополнительно</h3>
+          <fieldset class="form__container form__container--checkbox">
+            <h3 class="form__title form__title--additionaly">Дополнительно</h3>
             <div class="form__checkbox-wrapper">
 
               <div class="form__container-checkbox">
@@ -133,10 +132,10 @@
             </div>
           </fieldset>
 
-          <div class="form__container">
-            <div class="form__container-send">
+
+            <div class="form__container form__container-send">
             <button type="submit" class="button form__send-button">Отправить заявку</button>
-            <p class="form__text-discription"><sup>*</sup>— Обязательные поля</p>
+            <p class="form__text-discription--send"><sup>*</sup>— Обязательные поля</p>
           </div>
           </div>
         </form>
@@ -148,7 +147,7 @@
 
 
     <section class="cooperation">
-        <div class="cooperation__block">
+        <div class="cooperation__block cooperation__block--form">
           <h3 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h3>
           <p class="cooperation__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
