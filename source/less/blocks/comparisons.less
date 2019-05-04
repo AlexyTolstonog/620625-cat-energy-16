@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  margin-top: 30px;
 }
 
 .comparisons__img--before,
@@ -18,9 +19,14 @@
   width: 100%;
 }
 
+.comparisons__img--after {
+  display: none;
+}
+
 //планшетная версия
 @media (min-width: 768px) {
   .comparisons {
+    margin-top: 40px;
     width: 100%;
   }
 
@@ -46,6 +52,7 @@
   .comparisons__images {
     width: 100%;
     min-height: 517px;
+    margin-top: -13px;
   }
 
   .comparisons__img--before,

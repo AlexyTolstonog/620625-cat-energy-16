@@ -1,11 +1,11 @@
 .presents {
   width: 280px;
   height: 289px;
-  margin-top: 57px;
+  margin-top: 49px;
   display: flex;
   flex-direction: column;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
-  justify-content: center;
+  justify-content: space-evenly;
   background-size: contain;
   align-items: center;
 
@@ -15,8 +15,8 @@
 }
 
 .presents__image {
-  width: 100px;
-  height: 100px;
+  width: 55px;
+  height: 60px;
   fill: white;
 }
 
@@ -26,12 +26,16 @@
   font-weight: 400;
   line-height: 20px;
   margin: 0 auto;
+  text-align: center;
+  width: 159px;
 }
 
 //планшетная версия
 @media (min-width: 768px) {
   .presents {
     width: 100%;
+    margin-top: 70px;
+    margin-bottom: 70px;
     min-height: 200px;
     height: 100%;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
@@ -67,6 +71,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 0;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/gift-photo-desktop@2x.jpg");

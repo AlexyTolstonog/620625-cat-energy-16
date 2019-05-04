@@ -1,7 +1,7 @@
 .cooperation {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #f2f2f2;
   width: 320px;
   margin: 0 auto;
 }
@@ -12,24 +12,37 @@
   flex-direction: row;
   /*margin: 0 20px;*/
   min-height: 114px;
+  padding: 0 20px 0 20px;
+  background-color: white;
+}
+
+.cooperation__block--catalog {
+  background-color: #f2f2f2;
 }
 
 .cooperation__title {
+  margin-top: 30px;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  letter-spacing: -0.1px;
 }
 
 .cooperation__text {
+  margin-top: 30px;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
 }
 
 .cooperation__map {
-  min-height: 400px;
+  height: 365px;
   overflow: hidden;
+}
+
+.cooperation__map-item {
+  width: 100%;
 }
 
 //планшетная версия
@@ -43,12 +56,31 @@
   .cooperation__block {
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
+    padding: 0 72px;
+    min-height: 201px;
+  }
+
+  .cooperation__block--catalog {
+    background-color: #f2f2f2;
   }
 
   .cooperation__text,
   .cooperation__title {
     width: 25%;
+  }
+
+  .cooperation__title {
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+  }
+
+  .cooperation__text {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    letter-spacing: 1px;
+    text-align: right;
   }
 }
 
@@ -57,9 +89,23 @@
     width: 1300px;
     /*desctop*/
     margin: 0 auto;
+    position: relative;
   }
 
   .cooperation__block {
-    display: none;
+    position: absolute;
+    width: 426px;
+    min-height: 201px;
+    top: 95px;
+    left: 120px;
+  }
+
+  .cooperation__title,
+  .cooperation__text {
+    width: 40%;
+  }
+
+  .cooperation__block--catalog {
+    background-color: white;
   }
 }

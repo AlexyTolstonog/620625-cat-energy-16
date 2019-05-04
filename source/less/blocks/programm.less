@@ -23,16 +23,21 @@
 .programm__headline {
   text-align: center;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 39px;
 }
 
 .programm__text {
+  letter-spacing: -0.3px;
   text-align: center;
   margin: 0 auto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
 }
 
 .programm__image {
-  margin: 0 auto;
+  margin: 27px auto 0 auto;
   display: flex;
   flex-direction: column;
   width: 280px;
@@ -40,9 +45,12 @@
 }
 
 .programm__button {
-  width: 245px;
+  width: 280px;
+  min-height: 40px;
   color: #ffffff;
   background-color: #68b738;
+  margin-top: 5px;
+  letter-spacing: -0.5px;
 }
 
 //планшетная версия
@@ -61,28 +69,37 @@
     text-align: left;
     font-size: 60px;
     line-height: 60px;
-    margin: 0 203px 0 66px;
+    margin: 53px 202px 0 90px;
+    height: 100%;
   }
 
   .programm__text {
     text-align: left;
     font-size: 20px;
     line-height: 20px;
-    margin: 33px auto 48px 66px;
+    margin: 41px auto 0 90px;
+    height: 100%;
   }
 
   .programm__image {
     width: 709px;
     height: 609px;
+    margin: 17px auto 0 auto;
   }
 
   .programm__button {
     width: 245px;
     margin: 0;
-    margin-left: 66px;
-    bottom: 557px;
+    bottom: 527px;
+    height: 52px;
+    left: 123px;
     position: absolute;
     background-color: #68b738;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
   }
 }
 
@@ -95,31 +112,34 @@
     /*внутрение отступы*/
     margin: 0 auto;
     position: relative;
-    min-height: 690px;
+    min-height: 634px;
   }
 
   .programm__headline {
     max-width: 45%;
-    margin: 0;
+    margin: 101px 0 0 78px;
   }
 
   .programm__text {
     max-width: 45%;
-    margin: 0;
+    margin: 42px 0 0 77px;
   }
 
   .programm__image {
     width: auto;
     height: auto;
     position: absolute;
-    top: 10%;
-    left: 39%;
+    top: 0;
+    left: 488px;
   }
 
   .programm__button {
-    margin: 0;
-    margin-left: 0;
     position: static;
-    width: 280px;
+    width: 245px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin: 53px 0 0 80px;
   }
 }
