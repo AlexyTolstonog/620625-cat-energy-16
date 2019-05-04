@@ -1,7 +1,9 @@
 .comparisons {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .comparisons__images {
@@ -26,13 +28,15 @@
 //планшетная версия
 @media (min-width: 768px) {
   .comparisons {
+    width: 708px;
+    margin: 0 auto;
     margin-top: 40px;
-    width: 100%;
+    padding: 0 30px;
   }
 
   .comparisons__images {
-    width: 100%;
-    min-height: 517px;
+    width: 690px;
+    height: 517px;
   }
 
   .comparisons__img--before,
@@ -46,7 +50,9 @@
 //десктопная версия
 @media (min-width: 1300px) {
   .comparisons {
-    width: 50%;
+    margin: 0;
+    width: 630px;
+    padding: 0;
   }
 
   .comparisons__images {
@@ -59,6 +65,6 @@
   .comparisons__img--after {
     position: absolute;
     height: 499px;
-    width: 677px;
+    width: 100%;
   }
 }
