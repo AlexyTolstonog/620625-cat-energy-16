@@ -44,10 +44,20 @@
 .cooperation__map {
   height: 365px;
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 93px, cover;
+  background-position-x: 76%;
+  background-position-y: 51%;
+  background-image: url("../../img/map-pin.png"), url("../../img/bg-map-mobile@1x.png");
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../../img/map-pin.png"), url("../../img/bg-map-desktop@2x.png");
+  }
 }
 
 .cooperation__map-item {
   width: 100%;
+  height: 100%;
 }
 
 //планшетная версия
@@ -87,6 +97,15 @@
     letter-spacing: 1px;
     text-align: right;
   }
+
+  .cooperation__map {
+    background-position-x: 53%;
+    background-image: url("../../img/map-pin.png"), url("../img/bg-map-tablet@1x.png");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/map-pin.png"), url("../img/bg-map-tablet@2x.png");
+    }
+  }
 }
 
 @media (min-width: 1300px) {
@@ -119,5 +138,14 @@
 
   .cooperation__block--catalog {
     background-color: white;
+  }
+
+  .cooperation__map {
+    background-position-x: 74%;
+    background-image: url("../img/map-pin.png"), url("../img/bg-map-desktop@1x.png");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/map-pin.png"), url("../img/bg-map-desktop@2x.png");
+    }
   }
 }
