@@ -21,8 +21,6 @@
     "gulp-webp": "^4.0.1",
     "posthtml-include": "^1.2.0",
     "stylelint": "9.10.x",
-    "cwebp": "^2.0.3",
-    "svgxuse": "^1.2.6",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
