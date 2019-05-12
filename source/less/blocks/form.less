@@ -11,13 +11,30 @@
 }
 
 .form__title {
+  position: relative;
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
   text-align: left;
-  margin-top: 14px;
+  margin-top: 10px;
   letter-spacing: -1px;
+  background-color: white;
 }
+
+/*
+.form__title--coments::before,
+.form__title--additionaly::before,
+.form__title--data::before {
+  content: "";
+  position: absolute;
+  top: 52%;
+  width:1vw;
+  height: 3px;
+  margin-top: 2px;
+  background: #68b738;
+  z-index: -1;
+}
+*/
 
 .form__title-text {
   font-size: 14px;
@@ -90,10 +107,16 @@
   flex-direction: column;
 }
 
-.form__container--about,
-.form__container--radio {
+.form__container--about {
   margin-top: 13px;
-  border-bottom: 1px solid rgba(205, 205, 205, 0.5);
+}
+
+.form__container--radio {
+  margin-top: 35px;
+  margin-left: -1px;
+  border: 1px solid rgba(205, 205, 205, 0.5);
+  border-left: none;
+  border-right: none;
 }
 
 .form__label--info {
@@ -123,7 +146,7 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-  height: 50px;
+  height: 44px;
 
   &:hover::before {
     border: 1px solid #bababa;
@@ -169,6 +192,10 @@
   margin-top: 35px;
 }
 
+.form__container--data {
+  margin-top: 40px;
+}
+
 .form__title--data {
   font-size: 24px;
   font-weight: 400;
@@ -203,7 +230,7 @@
 
 /*CHEKBOX*/
 .form__container--checkbox {
-  margin-top: 30px;
+  margin-top: 24px;
 }
 
 .form__title--additionaly {
@@ -215,7 +242,7 @@
 }
 
 .form__checkbox-wrapper {
-  margin-top: 34px;
+  margin-top: 28px;
 }
 
 .form__input--checkbox {
@@ -226,7 +253,7 @@
 .form__label--checkbox {
   position: relative;
   padding-left: 50px;
-  margin-top: 30px;
+  margin-top: 0;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -246,7 +273,7 @@
   content: " ";
   position: absolute;
   top: 6px;
-  left: 0;
+  left: -4px;
   border: 1px solid #cdcdcd;
   width: 30px;
   height: 30px;
@@ -255,7 +282,7 @@
 .form__label--checkbox::after {
   content: "";
   top: 13px;
-  left: 10px;
+  left: 3px;
   display: none;
   background: url("../img/checkbpxarrow.png");
   background-repeat: no-repeat;
@@ -274,7 +301,7 @@
 .form__container-send {
   display: flex;
   flex-direction: column;
-  margin-top: 24px;
+  margin-top: 29px;
 }
 
 .form__send-button {
@@ -285,6 +312,8 @@
 
 .form__text-discription {
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 7px;
 }
 
 //планшетная версия
@@ -348,6 +377,14 @@
     height: 42px;
   }
 
+  .form__container--about {
+    margin-top: 50px;
+  }
+
+  .form__label--info {
+    margin-top: 15px;
+  }
+
   .form__input--info {
     margin-left: 15px;
   }
@@ -355,18 +392,19 @@
   /*radio*/
   .form__container--radio {
     border: 1px solid rgba(205, 205, 205, 0.5);
-    margin-top: 58px;
+    margin-top: 63px;
+    padding: 20px 0;
   }
 
   .form__label--radio {
-    margin: 11px 18px;
+    margin: 6px 18px 0;
     position: relative;
     padding-left: 69px;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
     text-transform: uppercase;
-    height: 50px;
+    height: 48px;
   }
 
   .form__label--radio::before {
@@ -463,7 +501,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 26px;
     justify-content: space-between;
   }
 
@@ -473,7 +511,7 @@
 
   .form__container-send {
     flex-direction: row;
-    margin-top: 62px;
+    margin-top: 53px;
   }
 
   .form__send-button {
@@ -500,7 +538,7 @@
   }
 
   .form__title {
-    margin-top: 68px;
+    margin-top: 70px;
   }
 
   .form__items {
@@ -519,7 +557,7 @@
   }
 
   .form__label--info {
-    margin-top: 13px;
+    margin-top: 16px;
     margin-right: 57px;
   }
 
@@ -530,11 +568,17 @@
 
   .form__container--radio {
     min-height: 195px;
-    margin-top: 64px;
+    margin-top: 63px;
+    padding: 0;
+  }
+
+  .form__label--radio {
+    margin: 11px 0 7px 0;
   }
 
   .form__container--about {
     border: none;
+    margin-top: 48px;
   }
 
   .form__contact-wrapper {
@@ -554,7 +598,7 @@
   }
 
   .form__title--data {
-    margin-top: 57px;
+    margin-top: 63px;
     margin-bottom: 0;
   }
 
@@ -573,11 +617,11 @@
   }
 
   .form__title--additionaly {
-    margin-top: 21px;
+    margin-top: 15px;
   }
 
   .form__checkbox-wrapper {
-    margin-top: 12px;
+    margin-top: 26px;
   }
 
   .form__container-checkbox {
@@ -586,7 +630,7 @@
   }
 
   .form__container-send {
-    margin-top: 70px;
+    margin-top: 60px;
   }
 
   .form__send-button {
