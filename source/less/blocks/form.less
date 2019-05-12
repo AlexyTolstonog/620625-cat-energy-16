@@ -52,7 +52,7 @@
 
 .form__input {
   flex-grow: 1;
-  padding: 5px 45px 5px 20px;
+  padding: 5px 35px 5px 20px;
   border: 2px solid rgba(205, 205, 205, 0.5);
 
   &:hover {
@@ -96,10 +96,6 @@
   border-bottom: 1px solid rgba(205, 205, 205, 0.5);
 }
 
-.form__label--info {
-  margin: 14px 0;
-}
-
 .form__input--info {
   padding: 5px 17px 5px 9px;
   margin-left: 8px;
@@ -124,6 +120,7 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  height: 50px;
 
   &:hover::before {
     border: 1px solid #bababa;
@@ -135,8 +132,9 @@
 }
 
 .form__label--radio::before {
-  content: "";
+  content: " ";
   position: absolute;
+  top: 9px;
   left: 0;
   border: 1px solid #cdcdcd;
   border-radius: 50px;
@@ -147,7 +145,7 @@
 .form__label--radio::after {
   content: " ";
   position: absolute;
-  top: 12px;
+  top: 28px;
   left: 0;
   background: #68b738;
   margin-top: 0;
@@ -183,6 +181,7 @@
 
 .form__input--data {
   margin-left: 5px;
+  width: 56%;
 }
 
 /*coments*/
@@ -229,6 +228,7 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  height: 42px;
 
   &:hover::before {
     border: 1px solid #bababa;
@@ -242,6 +242,7 @@
 .form__label--checkbox::before {
   content: " ";
   position: absolute;
+  top: 6px;
   left: 0;
   border: 1px solid #cdcdcd;
   width: 30px;
@@ -250,6 +251,7 @@
 
 .form__label--checkbox::after {
   content: "";
+  top: 13px;
   left: 10px;
   display: none;
   background: url("../img/checkbpxarrow.png");
@@ -438,6 +440,7 @@
   .form__label--checkbox::before {
     content: " ";
     position: absolute;
+    top: 0;
     left: 0;
     border: 1px solid black;
     width: 40px;
