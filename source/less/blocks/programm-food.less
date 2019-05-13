@@ -6,6 +6,7 @@
   /*ширина для мобильного*/
   padding: 0 20px;
   margin: 0 auto;
+  height: 100%;
 }
 
 .programm-food__headline {
@@ -13,14 +14,21 @@
   font-weight: 400;
   line-height: 37.02px;
   text-transform: uppercase;
+  letter-spacing: -0.5px;
+  margin-top: 30px;
+  padding-left: 10px;
 }
+
 
 .programm-food__wrapper {
   display: flex;
   flex-direction: column;
   background: #f2f2f2;
-  margin-top: 10px;
-  padding: 20px;
+  padding: 0 20px 0 20px;
+  align-items: flex-start;
+  justify-content: start;
+  margin-top: 24px;
+  width: 100%;
 }
 
 .programm-food__title {
@@ -35,6 +43,12 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+  margin-top: 5px;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  max-width: 90%;
+  border-bottom: 1px solid #8080806b;
 }
 
 .programm-food__link {
@@ -45,10 +59,15 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #111111;
+  min-height: 55px;
+  width: auto;
+  padding: 0;
+  margin-top: 15px;
 }
 
 .programm-food__link-icon {
   width: 24px;
+  margin-left: 10px;
 }
 
 .programm-food__link:hover .programm-food__link-icon {
@@ -68,17 +87,61 @@
   }
 
   .programm-food__wrapper {
-    width: auto;
+    width: 100%;
     position: relative;
     padding-right: 45%;
+    min-height: 372px;
+    margin-top: 0;
+    padding-left: 54px;
+    margin-bottom: 30px;
   }
 
   .programm-food__img {
     position: absolute;
-    top: 40px;
-    right: 19px;
-    width: 219px;
-    height: 164px;
+    top: 82px;
+    right: 24px;
+    width: 277px;
+    height: 192px;
+  }
+
+  .programm-food__img--pro {
+    position: absolute;
+    top: 95px;
+    right: 24px;
+    width: 271px;
+    height: 192px;
+  }
+
+  .programm-food__headline {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 37.02px;
+    text-transform: uppercase;
+    margin-top: 77px;
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 26px;
+    letter-spacing: -1.9px;
+  }
+
+  .programm-food__text {
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 0;
+  }
+
+  .programm-food__link-icon {
+    margin-left: 17px;
+  }
+
+  .programm-food__link {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    align-items: flex-end;
   }
 }
 
@@ -95,10 +158,47 @@
 
   .programm-food__wrapper {
     width: 43%;
+    min-height: 372px;
+  }
+
+  .programm-food__title {
+    margin-top: 47px;
+  }
+
+  .programm-food__headline {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 37.02px;
+    text-transform: uppercase;
+    margin-left: 43px;
   }
 
   .programm-food__img {
     width: 134px;
     height: 100px;
+    margin-left: 7px;
+  }
+
+  .programm-food__text {
+    font-size: 16px;
+    margin-left: 32px;
+    margin-top: 37px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .programm-food__link {
+    min-height: 43px;
+    margin-left: 28px;
+    letter-spacing: -1px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    border: none;
+  }
+
+  .programm-food__link-icon {
+    margin-left: 17px;
   }
 }

@@ -12,12 +12,13 @@
   width: 280px;
   padding: 0 20px;
   margin: 0 auto;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .header__logo-image {
   flex-grow: 1;
   width: 190px;
-  height: 65px;
+  height: 76px;
 
   &:hover {
     opacity: 0.8;
@@ -31,7 +32,9 @@
 //планшетная версия
 @media (min-width: 768px) {
   .header {
+    margin-top: 24px;
     width: 100%;
+    border: none;
   }
 
   .header__container {
@@ -41,6 +44,13 @@
     width: 708px;
     padding: 0 30px;
     margin: 0 auto;
+    border: none;
+  }
+
+  .header__logo-image {
+    flex-grow: 1;
+    width: 175px;
+    height: 65px;
   }
 }
 
@@ -48,6 +58,7 @@
 @media (min-width: 1300px) {
   .header {
     width: 100%;
+    margin-top: 0;
   }
 
   //ширина для десктопа
@@ -57,6 +68,16 @@
     padding: 0 40px;
     /*внутрение отступы*/
     margin: 0 auto;
+    border: none;
+  }
+
+  .header__logo {
+    margin-top: 32px;
+  }
+
+  .header__logo-image {
+    width: 199px;
+    height: 60px;
   }
 
   .header__container--image {
@@ -66,10 +87,10 @@
   .header__container--image::after {
     content: "";
     position: absolute;
-    right: -70px;
+    right: 0;
     top: 0;
-    width: 720px;
-    height: 696px;
+    width: 50%;
+    height: 675px;
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-size: cover;
     z-index: -1;

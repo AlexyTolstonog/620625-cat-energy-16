@@ -1,7 +1,9 @@
 .comparisons {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .comparisons__images {
@@ -10,6 +12,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  margin-top: 30px;
 }
 
 .comparisons__img--before,
@@ -18,40 +21,52 @@
   width: 100%;
 }
 
+.comparisons__img--after {
+  display: none;
+}
+
 //планшетная версия
 @media (min-width: 768px) {
   .comparisons {
-    width: 100%;
+    width: 708px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 0 30px;
   }
 
   .comparisons__images {
-    width: 100%;
-    min-height: 517px;
+    width: 690px;
+    height: 517px;
+    margin-top: 40px;
   }
 
   .comparisons__img--before,
   .comparisons__img--after {
-    position: absolute;
-    height: 499px;
-    width: 677px;
+    height: 514px;
+    width: 640px;
+    bottom: 0;
+    left: 22px;
   }
 }
 
 //десктопная версия
 @media (min-width: 1300px) {
   .comparisons {
-    width: 50%;
+    margin: 0;
+    width: 630px;
+    padding: 0;
   }
 
   .comparisons__images {
     width: 100%;
     min-height: 517px;
+    margin-top: -13px;
   }
 
   .comparisons__img--before,
   .comparisons__img--after {
     position: absolute;
     height: 499px;
-    width: 677px;
+    width: 100%;
   }
 }
